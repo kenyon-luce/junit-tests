@@ -3,12 +3,12 @@ import java.util.ArrayList;
 public class Student {
     private String name;
     private long id;
-    private ArrayList<Long> grades;
+    private ArrayList<Integer> grades;
 
     public Student(String name, long id){
         this.name = name;
         this.id = id;
-        this.grades = new ArrayList<Long>();
+        this.grades = new ArrayList<Integer>();
     }
 
     public String getName(){
@@ -19,7 +19,7 @@ public class Student {
         return this.id;
     }
 
-    public ArrayList<Long> getGrades(){
+    public ArrayList<Integer> getGrades(){
         return this.grades;
     }
 
@@ -32,9 +32,7 @@ public class Student {
         return total/grades.size();
     }
 
-    public void addGrade(long grade){
-        grades.add(grade);
+    public void addGrade(int grade){
+        getGrades().add(grade);
     }
-
-
 }
