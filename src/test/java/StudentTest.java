@@ -16,8 +16,9 @@ public class StudentTest {
         grade.addGrade(100);
         grade.addGrade(90);
 
-//        assertEquals(100, grade.getGrades().get(0));
-//        assertEquals(90, grade.getGrades().get(1));
+        assertSame(2, grade.getGrades().size());
+        assertSame(100, grade.getGrades().get(0));
+        assertSame(90, grade.getGrades().get(1));
         assertEquals(95, grade.getGradeAverage());
     }
 }

@@ -20,7 +20,7 @@ public class Student {
     }
 
     public ArrayList<Integer> getGrades(){
-        return this.grades;
+        return grades;
     }
 
     public long getGradeAverage(){
