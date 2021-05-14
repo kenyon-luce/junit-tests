@@ -46,6 +46,4 @@ public class CohortTest {
         assertEquals(70, cohortWOne.getCohortAverage(), 0.5);
         assertEquals(77.5, cohortWMany.getCohortAverage(), 0.5);
     }
-
-
 }
